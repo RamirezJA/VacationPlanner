@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class VacationPlanner {
     public static void main (String[] args) {
-       //welcome();
+       welcome();
        timeBudget();
        timeDifference();
-        countryArea();
+       countryArea();
     }
     public static void welcome() {
         Scanner input = new Scanner(System.in);
@@ -27,13 +27,13 @@ public class VacationPlanner {
         String symbol = input.next();
         System.out.print("How many " + symbol + " are there in 1 USD?");
         Double conversion = input.nextDouble();
-        double dayspend = (budget/days)*100;
+        Double dayspend = (budget/days)*100;
         int twodecimal = (int) dayspend;
-        double a;
+        Double a;
         a = twodecimal/100.0;
-        double dayconversion = (budget*conversion/days)*100;
+        Double dayconversion = (budget*conversion/days)*100;
         int decimal = (int) dayconversion;
-        double b;
+        Double b;
         b = decimal/100.0;
 
         System.out.println("If you are traveling for " + days + " days that is the same as " + days*24 +" hours or " + days*1440 + " minutes");
