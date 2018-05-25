@@ -27,13 +27,13 @@ public class VacationPlanner {
         String symbol = input.next();
         System.out.print("How many " + symbol + " are there in 1 USD?");
         Double conversion = input.nextDouble();
-        Double dayspend = (budget/days)*100;
+        double dayspend = (budget/days)*100;
         int twodecimal = (int) dayspend;
-        Double a;
+        double a;
         a = twodecimal/100.0;
-        Double dayconversion = (budget*conversion/days)*100;
+        double dayconversion = (budget*conversion/days)*100;
         int decimal = (int) dayconversion;
-        Double b;
+        double b;
         b = decimal/100.0;
 
         System.out.println("If you are traveling for " + days + " days that is the same as " + days*24 +" hours or " + days*1440 + " minutes");
